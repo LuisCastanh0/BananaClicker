@@ -20,14 +20,32 @@ def MenuWindow(window,cont):
                         bg='#82929E',fg='#F1EC5D')
     BananaLabel.place(anchor = 'n',relx=0.5,rely=0.1)
 
-    StartButton = Button(frame, text='Iniciar',
-                         font=('Arial',16),
+    StartButton = Button(frame, text='INICIAR',
+                         font=('Impact',16),
                          bg="#F1EC5D",fg='Black',
                          command=lambda: MainWindow(window,cont),
                          activebackground="#FFF600", 
                          width=10, height=2, bd=3,relief=RAISED
                          )
     StartButton.place(anchor='center', relx=0.5,rely=0.4)
+
+    OptionsButton = Button(frame, text='OPÇÕES',
+                         font=('Impact',16),
+                         bg="#F1EC5D",fg='Black',
+                         command=lambda: MainWindow(window,cont),
+                         activebackground="#FFF600", 
+                         width=10, height=2, bd=3,relief=RAISED
+                         )
+    OptionsButton.place(anchor='center', relx=0.5,rely=0.5)
+
+    MoreButton = Button(frame, text='SOBRE',
+                         font=('Impact',16),
+                         bg="#F1EC5D",fg='Black',
+                         command=lambda: MainWindow(window,cont),
+                         activebackground="#FFF600", 
+                         width=10, height=2, bd=3,relief=RAISED
+                         )
+    MoreButton.place(anchor='center',relx=0.5,rely=0.6)
 
 def MainWindow(window, cont):
     for widget in window.winfo_children():
@@ -58,7 +76,7 @@ def MainWindow(window, cont):
 
     StoreButton = Button(frame,
                          text='Loja',
-                         font=('Arial',10,'bold'),
+                         font=('Impact',16),
                          foreground='Black',
                          background='#F1EC5D',
                          activebackground="#FFF600",  # Change active background color
@@ -88,7 +106,7 @@ def StoreWindow(window,cont):
     TwoBananas_Pic.grid(row=0,column=1,pady=20,padx=20)
     # Botao
     TwoBananas_Button = Button(frame,text='Comprar',
-                               font=('Arial',16),
+                               font=('Impact',16),
                                foreground='Black',
                                background='#F1EC5D',
                                activebackground="#FFF600",  # Change active background color
@@ -111,7 +129,7 @@ def StoreWindow(window,cont):
     ThreeBananas_Pic.grid(row=1,column=1,pady=20,padx=20)
     # Botao
     ThreeBananas_Button = Button(frame,text='Comprar',
-                                 font=('Arial',16),
+                                 font=('Impact',16),
                                  foreground='Black',
                                  background='#F1EC5D',
                                  activebackground="#FFF600",  # Change active background color
@@ -134,7 +152,7 @@ def StoreWindow(window,cont):
     BananaBunch_Pic.grid(row=2,column=1,pady=20,padx=20)
     # Botao
     BananaBunch = Button(frame,text='Comprar',
-                                 font=('Arial',16),
+                                 font=('Impact',16),
                                  foreground='Black',
                                  background='#F1EC5D',
                                  activebackground="#FFF600",  # Change active background color
@@ -144,7 +162,7 @@ def StoreWindow(window,cont):
     # Botao Retornar
     Return_Button = Button(frame,text='Voltar',
                            command=lambda: MainWindow(window, cont),
-                           font=('Arial',16),
+                           font=('Impact',16),
                            foreground='Black',
                            background='#F1EC5D',
                            activebackground="#FFF600",  # Change active background color
